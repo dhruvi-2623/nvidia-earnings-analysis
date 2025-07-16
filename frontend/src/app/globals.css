@@ -1,0 +1,366 @@
+/* src/styles/globals.css */
+:root {
+  /* NVIDIA Brand Colors */
+  --nvidia-green: #76B900;
+  --nvidia-dark: #000;
+  --nvidia-gray: #333;
+  --nvidia-light-gray: #f5f5f5;
+
+  /* Accent Colors */
+  --management-color: #3498db;
+  --qa-color: #e74c3c;
+  --positive: #2ecc71;
+  --negative: #e74c3c;
+}
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI','Roboto','Helvetica Neue',sans-serif;
+  line-height: 1.7;
+  color: var(--nvidia-gray);
+  background: #f8f9fa;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, var(--nvidia-dark), #111, var(--nvidia-dark));
+  background-size: 400% 400%;
+  animation: slideGradient 20s ease infinite;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 5px;
+  background: var(--nvidia-green);
+}
+.header h1 {
+  font-size: 2.8rem;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.header p {
+  font-size: 1.3rem;
+  color: #ddd;
+  opacity: 0.85;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.nvidia-logo {
+  color: var(--nvidia-green);
+  font-size: 2rem;      
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Section */
+.section {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.section h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--nvidia-dark);
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--nvidia-green);
+}
+.section h2::before {
+  content: "";
+  display: inline-block;
+  width: 8px; height: 8px;
+  background: var(--nvidia-green);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+/* Chart */
+.chart-container {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  height: 400px;
+  margin-bottom: 60px;
+
+}
+
+/* Quarter Selector */
+.quarter-selector {
+  position: sticky;
+  top: 80px; /* just below header */
+  z-index: 10;
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  margin: 40px 30px;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.buttons button {
+  min-width: 120px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--nvidia-gray);
+  background: #fff;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.buttons button:hover {
+  border-color: var(--nvidia-green);
+  color: var(--nvidia-green);
+  transform: translateY(-3px);
+}
+.buttons button.active {
+  background: var(--nvidia-green);
+  color: #fff;
+  border-color: var(--nvidia-green);
+  box-shadow: 0 5px 15px rgba(118,185,0,0.3);
+}
+
+/* Themes */
+.themes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+.theme-card {
+  position: relative;
+  overflow: hidden;
+  padding: 25px;
+  background: linear-gradient(145deg,#fff,#f9f9f9);
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform .4s ease,box-shadow .4s ease;
+}
+.theme-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 5px; height: 100%;
+  background: var(--nvidia-green);
+}
+.theme-card:hover {
+  transform: translateY(-8px) rotateZ(1deg) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+.theme-card h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--nvidia-dark);
+  margin-bottom: 15px;
+}
+.theme-card h3::before {
+  content: "•";
+  color: var(--nvidia-green);
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+.theme-card p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: .5px;
+}
+
+/* Transcript Viewer */
+.transcript-viewer {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.tabs {
+  display: flex;
+  background: var(--nvidia-light-gray);
+}
+.tabs button {
+  flex: 1;
+  padding: 18px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #666;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background .3s ease,color .3s ease;
+}
+.tabs button:hover {
+  background: rgba(118,185,0,0.1);
+  color: var(--nvidia-dark);
+}
+.tabs button.active {
+  background: var(--nvidia-green);
+  color: #fff;
+}
+.transcript-content {
+  padding: 30px;
+}
+.sentiment-summary {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  background: rgba(52,152,219,0.08);
+  border-left: 4px solid var(--management-color);
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+.transcript-content ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.transcript-content li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.1rem;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.transcript-content li::before {
+  content: "→";
+  color: var(--nvidia-green);
+  font-weight: bold;
+  margin-right: 15px;
+}
+.transcript-content li:last-child {
+  border-bottom: none;
+}
+
+/* Comparison Table */
+.comparison-wrapper {
+  overflow-x: auto;
+  margin: 30px 0;
+}
+.comparison-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+.comparison-table thead th {
+  position: sticky;
+  top: calc(80px + 20px); /* header (80px) + some padding */
+  background: var(--nvidia-dark);
+  color: #fff;
+  padding: 16px;
+  font-weight: 600;
+  text-align: left;
+  z-index: 2;
+}
+.comparison-table th,
+.comparison-table td {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+.comparison-table tbody tr:nth-child(even) {
+  background: var(--nvidia-light-gray);
+}
+.comparison-table tbody tr:hover {
+  background: #fff8e1;
+}
+.comparison-table td:nth-child(2),
+.comparison-table td:nth-child(3) {
+  text-align: center;
+}
+
+/* Skeleton Loader */
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  gap: 25px;
+}
+.skeleton-card {
+  height: 120px;
+  border-radius: 12px;
+  background: linear-gradient(-90deg,#f0f0f0 0%,#e0e0e0 50%,#f0f0f0 100%);
+  background-size: 400% 400%;
+  animation: shimmer 1.6s ease infinite;
+}
+
+/* Footer */
+.footer {
+  padding: 25px;
+  text-align: center;
+  font-size: 1rem;
+  color: #777;
+  border-top: 1px solid #eee;
+  margin-top: 50px;
+}
+
+/* Animations */
+@keyframes slideGradient {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.section, .theme-card {
+  animation: fadeIn .6s ease forwards;
+}
+.section:nth-child(1) { animation-delay: .1s; }
+.section:nth-child(2) { animation-delay: .2s; }
+.section:nth-child(3) { animation-delay: .3s; }
+.theme-card:nth-child(1) { animation-delay: .1s; }
+.theme-card:nth-child(2) { animation-delay: .2s; }
+.theme-card:nth-child(3) { animation-delay: .3s; }
+.theme-card:nth-child(4) { animation-delay: .4s; }
+.theme-card:nth-child(5) { animation-delay: .5s; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container { padding: 15px; }
+  .section { padding: 25px 20px; }
+  .themes-container { grid-template-columns: 1fr; }
+  .buttons { flex-direction: column; gap: 10px; }
+  .buttons button { width: 100%; }
+  .chart-container { height: 300px; }
+  .header h1 { font-size: 2.2rem; }
+  .header p { font-size: 1.1rem; }
+}
