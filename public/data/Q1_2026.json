@@ -1,0 +1,32 @@
+{
+  "quarter": "Q1_2026",
+  "management": {
+    "label": "Positive",
+    "score": 0.8,
+    "key_phrases": [
+      "Strong Q1 revenue exceeding outlook",
+      "Accelerating AI factory deployments",
+      "High demand for inference",
+      "Successful Blackwell GPU ramp",
+      "New product roadmap progressing well"
+    ]
+  },
+  "qa": {
+    "label": "Positive",
+    "score": 0.8,
+    "key_phrases": [
+      "Inference business growth",
+      "Grace Blackwell demand",
+      "China market headwinds",
+      "AI infrastructure build-out",
+      "Sequential growth outlook"
+    ]
+  },
+  "themes": [
+    "Strong Q1 revenue exceeding outlook",
+    "Accelerating AI factory deployments",
+    "High demand for inference",
+    "Successful Blackwell GPU ramp",
+    "New product roadmap progressing well"
+  ]
+}

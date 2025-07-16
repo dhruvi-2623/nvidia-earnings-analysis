@@ -1,0 +1,32 @@
+{
+  "quarter": "Q2_2025",
+  "management": {
+    "label": "Positive",
+    "score": 0.8,
+    "key_phrases": [
+      "Record Q2 revenue ($30B)",
+      "Strong Data Center growth (154% YoY)",
+      "High demand for Hopper & Blackwell GPUs",
+      "Successful Blackwell platform launch expected Q4",
+      "Enterprise AI adoption accelerating"
+    ]
+  },
+  "qa": {
+    "label": "Positive",
+    "score": 0.8,
+    "key_phrases": [
+      "Hopper demand strengthening",
+      "Blackwell revenue ramp",
+      "Gross margin in mid-70s",
+      "Strong China performance",
+      "Accelerated computing growth"
+    ]
+  },
+  "themes": [
+    "Record Q2 revenue ($30B)",
+    "Strong Data Center growth (154% YoY)",
+    "High demand for Hopper & Blackwell GPUs",
+    "Successful Blackwell platform launch expected Q4",
+    "Enterprise AI adoption accelerating"
+  ]
+}

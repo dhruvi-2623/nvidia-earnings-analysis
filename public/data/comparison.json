@@ -1,0 +1,32 @@
+[
+  {
+    "quarter": "Q3_2025",
+    "managementChange": 0,
+    "qaChange": 0,
+    "newThemes": [
+      "Record Q4 revenue ($39.3B)",
+      "Blackwell GPU exceeding expectations",
+      "Strong Data Center growth (93% YoY)",
+      "AI inference demand accelerating",
+      "Successful new product launches (RTX 50 Series)"
+    ]
+  },
+  {
+    "quarter": "Q4_2025",
+    "managementChange": 0,
+    "qaChange": 0,
+    "newThemes": []
+  },
+  {
+    "quarter": "Q1_2026",
+    "managementChange": 0,
+    "qaChange": 0,
+    "newThemes": [
+      "Strong Q1 revenue exceeding outlook",
+      "Accelerating AI factory deployments",
+      "High demand for inference",
+      "Successful Blackwell GPU ramp",
+      "New product roadmap progressing well"
+    ]
+  }
+]

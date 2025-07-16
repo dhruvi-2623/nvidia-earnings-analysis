@@ -1,0 +1,32 @@
+{
+  "quarter": "Q4_2025",
+  "management": {
+    "label": "Positive",
+    "score": 0.8,
+    "key_phrases": [
+      "Record Q4 revenue ($39.3B)",
+      "Blackwell GPU exceeding expectations",
+      "Strong Data Center growth (93% YoY)",
+      "AI inference demand accelerating",
+      "Successful new product launches (RTX 50 Series)"
+    ]
+  },
+  "qa": {
+    "label": "Positive",
+    "score": 0.8,
+    "key_phrases": [
+      "AI mainstream adoption",
+      "Enterprise growth potential",
+      "Hyperscaler vs. Enterprise spend",
+      "Data center refresh cycle",
+      "Gross margin improvement"
+    ]
+  },
+  "themes": [
+    "Record Q4 revenue ($39.3B)",
+    "Blackwell GPU exceeding expectations",
+    "Strong Data Center growth (93% YoY)",
+    "AI inference demand accelerating",
+    "Successful new product launches (RTX 50 Series)"
+  ]
+}
