@@ -4,29 +4,29 @@
     "label": "Positive",
     "score": 0.8,
     "key_phrases": [
-      "Record Q4 revenue ($39.3B)",
-      "Blackwell GPU exceeding expectations",
-      "Strong Data Center growth (93% YoY)",
-      "AI inference demand accelerating",
-      "Successful new product launches (RTX 50 Series)"
+      "Record revenue and growth across all platforms",
+      "Strong data center performance driven by H200 and Blackwell",
+      "Exceptional demand for AI infrastructure and software",
+      "Expansion into enterprise and industrial AI markets",
+      "Positive market outlook despite competitive landscape"
     ]
   },
   "qa": {
     "label": "Positive",
     "score": 0.8,
     "key_phrases": [
-      "Blackwell ramp exceeding expectations",
-      "Strong demand for GPUs driven by AI",
-      "Gross margin recovery expected",
-      "Modernization of data centers for AI",
-      "New market opportunities in generative AI"
+      "Inference market growth",
+      "Data center networking business",
+      "Sovereign AI demand",
+      "Blackwell platform ramp",
+      "Supply chain for gaming"
     ]
   },
   "themes": [
-    "Record Q4 revenue ($39.3B)",
-    "Blackwell GPU exceeding expectations",
-    "Strong Data Center growth (93% YoY)",
-    "AI inference demand accelerating",
-    "Successful new product launches (RTX 50 Series)"
+    "Record revenue and growth across all platforms",
+    "Strong data center performance driven by H200 and Blackwell",
+    "Exceptional demand for AI infrastructure and software",
+    "Expansion into enterprise and industrial AI markets",
+    "Positive market outlook despite competitive landscape"
   ]
 }
