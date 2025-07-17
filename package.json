@@ -1,0 +1,23 @@
+{
+  "name": "nvidia-earnings-analysis",
+  "version": "1.0.0",
+  "description": "![App Screenshot](/screenshot.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd frontend && npm install && npm run start"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruvi-2623/nvidia-earnings-analysis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhruvi-2623/nvidia-earnings-analysis/issues"
+  },
+  "homepage": "https://github.com/dhruvi-2623/nvidia-earnings-analysis#readme"
+}
